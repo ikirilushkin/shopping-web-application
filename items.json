@@ -1,0 +1,102 @@
+  [
+    {
+      "id": "1",
+      "name": "LG Nexus 5X Unlocked Smartphone - Black 16GB (U.S. Warranty)",
+      "color": "black",
+      "issueDate": "11.22.2015",
+      "price": "349.00",
+      "rating": "2",
+      "inStock": false,
+      "image": "http://ecx.images-amazon.com/images/I/81BVLBtGV%2BL._SX522_.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Canon MG5720 Wireless All-In-One Printer with Scanner and Copier: Mobile and Tablet Printing with Airprint(TM)compatible",
+      "color": "black",
+      "issueDate": "04.10.2015",
+      "price": "79.99",
+      "rating": "2.5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/413THKUjafL.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Samsung Galaxy SMG900H Factory Unlocked Cellphone, Android KitKat 4.4.2 International Version",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "367.05",
+      "rating": "3",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81EcbdtD8gL._SY679_.jpg"
+    },
+    {
+      "id": "4",
+      "name": "TCL 28S3750 28 Inch 720p Roku Smart LED TV (2015 Model)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "169.99",
+      "rating": "4.5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81jN3i8JsSL._SX522_.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Samsung UN65JU6500 65-Inch 4K Ultra HD Smart LED TV (2015 Model)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "1597.99",
+      "rating": "5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/A1qRPZF4PFL._SX522_.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Sony XBR75X850C 75-Inch 4K Ultra HD 3D Smart LED TV (2015 Model)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "3498.00",
+      "rating": ".5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81YEso-vlpL._SX522_.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Fitbit Surge Fitness Superwatch",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "199.89",
+      "rating": "4",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/61NjouCKL0L._SX522_.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Huawei Nexus 6P - 64 GB Aluminum (U.S. Version: Nin-A12) - Unlocked 5.7-inch Android 6.0 smartphone w/ 4G LTE (U.S. Warranty)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "549.99",
+      "rating": "4.5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81jlb0qu9gL._SY679_.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Huawei Nexus 6P - 128 GB Aluminum (U.S. Version: Nin-A13) - Unlocked 5.7-inch Android 6.0 smartphone w/ 4G LTE (U.S. Warranty)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "649.00",
+      "rating": "5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81jlb0qu9gL._SY679_.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Huawei Nexus 6P - 32 GB Aluminum (U.S. Version: Nin-A1) - Unlocked 5.7-inch Android 6.0 smartphone w/ 4G LTE (U.S. Warranty)",
+      "color": "white",
+      "issueDate": "07.01.2015",
+      "price": "499.00",
+      "rating": "3.5",
+      "inStock": true,
+      "image": "http://ecx.images-amazon.com/images/I/81jlb0qu9gL._SY679_.jpg"
+    }
+  ]

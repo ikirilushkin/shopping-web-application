@@ -1,0 +1,83 @@
+<div class="row filters">
+    <div class="col-lg-12 filter-line">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="select-date">
+                    <span class="select-date__text">From</span>
+                    <datepicker button-prev="<<" button-next=">>" date-format="MM.dd.yyyy" class="datepicker-input">
+                        <input ng-model="search.filter.dates.minDate" class="form-control input" type="text"/>
+                    </datepicker>
+                    <span class="glyphicon glyphicon-calendar select-date__icon" aria-hidden="true"></span>
+                </div>
+                <div class="select-date">
+                    <span class="select-date__text">To</span>
+                    <datepicker button-prev="<<" button-next=">>" date-format="MM.dd.yyyy" class="datepicker-input">
+                        <input ng-model="search.filter.dates.maxDate" class="form-control input"  type="text"/>
+                    </datepicker>
+                    <span class="glyphicon glyphicon-calendar select-date__icon" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="search.filter.inStock"> In stock only
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 filter-line">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="select-price">
+                    <span class="select-price__text">Price from</span>
+                    <input ng-model="search.filter.price.min" class="form-control input select-price__input"  type="text"/>
+                </div>
+                <div class="select-price">
+                    <span class="select-price__text">to</span>
+                    <input ng-model="search.filter.price.max" class="form-control input select-price__input"  type="text"/>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <select name="filter" id="filter" ng-model="search.filter.color" ng-options="color for color in search.colors">
+                    <option value="">Select Color</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row shop-item"
+     ng-repeat="item in search.items | dateRange : search.filter.dates.minDate : search.filter.dates.maxDate | filter: search.colorFilter | filter : search.isInStockFilter | sumRange : search.filter.price.min : search.filter.price.max">
+    <div class="col-lg-3 col-md-4 col-sm-5">
+        <div class="shop-item-image">
+            <img class="img-thumbnail" ng-src="{{item.image}}" alt=""/>
+        </div>
+    </div>
+    <div class="col-lg-9 col-md-8 col-sm-7">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>{{item.name}}</h4>
+            </div>
+            <div class="col-lg-3">
+                <p class="shop-item-issue-date">{{item.issueDate}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p class="shop-item-price">{{item.price | currency}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>{{item.color}}</p>
+                <rating rate-value="{{item.rating}}"></rating>
+            </div>
+            <div class="col-lg-3">
+                <h5 ng-class="{'text-success': item.inStock, 'text-warning': !item.inStock}">{{item.inStock ? "In stock": "Not available"}}</h5>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-primary" ng-click="search.addToCart($index)">Order</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>

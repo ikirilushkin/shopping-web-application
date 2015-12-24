@@ -1,0 +1,43 @@
+{
+  "name": "shopping-web-application",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ilya Kirilushkin <ilya.kirilushkin@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "angular-local-storage": "~0.2.3",
+    "angularjs-datepicker": "~0.2.16",
+    "AngularJS-Toaster": "angularjs-toaster#~0.4.181",
+    "angular-animate": "~1.4.8",
+    "angular-modal-service": "~0.6.9",
+    "moment": "~2.10.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "ignore": true
+    },
+    "angularjs-datepicker": {
+      "main": "dist/angular-datepicker.min.js"
+    },
+    "AngularJS-Toaster": {
+      "main": "toaster.js"
+    },
+    "angular-modal-service": {
+      "main": "dst/angular-modal-service.min.js"
+    }
+  }
+}

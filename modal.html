@@ -1,0 +1,25 @@
+<div class="modal-outer">
+    <div class="modal-shadow" ng-click="ctrl.close()">
+    </div>
+    <div class="modal-inner">
+        <span class="glyphicon glyphicon-remove modal-inner__close" ng-click="ctrl.close()"></span>
+        <h4>Cart</h4>
+        <table class="table" ng-if="ctrl.cart.length">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in ctrl.cart">
+                    <th scope="row">{{$index + 1}}</th>
+                    <td>{{item.name}}</td>
+                    <td>{{item.count}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="text-info" ng-if="!ctrl.cart.length">Cart is empty</p>
+    </div>
+</div>

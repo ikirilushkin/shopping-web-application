@@ -1,0 +1,20 @@
+<div class="row header">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" ng-if="!$root.auth.isLoggedIn()">
+        <ul class="top-nav">
+            <li class="top-nav-item">
+                <a ui-sref="login">Log in</a>
+            </li>
+            <li class="top-nav-item">
+                <a ui-sref="signup">Sign up</a>
+            </li>
+            <li class="top-nav-item">
+                <a ui-sref="search">Search</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-9 col-lg-offset-3 col-md-9 col-md-offset-3 col-sm-10 col-sm-offset-2 col-xs-11 col-xs-offset-1" ng-if="$root.auth.isLoggedIn()">
+        <span>{{$root.auth.user.email}}</span>
+        <a class="pull-right cart-link" ng-click="header.showAModal()">Cart: {{$root.cart.itemsCount()}} {{$root.cart.itemsCount() === 1 ? 'item' : 'items'}}</a>
+    </div>
+</div>
+

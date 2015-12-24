@@ -24,7 +24,7 @@ function SearchController(itemsService, cartService){
         return item;
     };
     this.colorFilter = function(item){
-        if (self.filter.color && item.color !== self.filter.color.toLocaleLowerCase()){
+        if (self.filter.color && item.color.toLocaleLowerCase() !== self.filter.color.toLocaleLowerCase()){
             return;
         }
         return item;
